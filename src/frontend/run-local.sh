@@ -1,0 +1,1 @@
+docker compose  --env-file .env.local.example up --build

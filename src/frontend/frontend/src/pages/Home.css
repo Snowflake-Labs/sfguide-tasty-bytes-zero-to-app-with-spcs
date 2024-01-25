@@ -1,0 +1,141 @@
+.home-header {
+    background-color: #282c34;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.homeLogo {
+    width: 3%;
+    margin-left: 5%;
+    margin-top: 0%;
+    /* margin-bottom: 2%; */
+}
+
+.homeTitle {
+    text-align: center;
+    margin-bottom: 0em;
+    margin-left: 1%;
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: 800;
+}
+
+.home-logoutBtn {
+    margin-left: 20px;
+}
+
+.dateGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-top: 2%;
+    margin-left: 5%;
+    /* width: 200px; */
+}
+
+.dateSpan {
+    margin-left: 10px;
+}
+
+.dateLabel {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.franchiseLabel {
+    font-weight: 800;
+}
+
+.chart1 {
+    width: 700px;
+    height: 500px;
+}
+
+.chartLabel {
+    color: white !important;
+}
+
+.homerow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.row1col {
+    width: 45%;
+    height: 50vh;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    /* padding: 1%; */
+    margin-left: 1%;
+}
+
+.homecol {
+    height: 45vh;
+    width: 100%;
+}
+
+.row2col {
+    width: 91%;
+    height: 50vh;
+    border: 1px solid lightgray;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.colHeader {
+    height: 35px;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 5px;
+    /* background-color: #548bf2; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+.home-breadcrumbs {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+}
+
+.home-breadcrumb-capsule {
+    /* width: 200px; */
+    height: 35px;
+    background-color: aliceblue;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: medium;
+    color: gray;
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-right: 20px;
+    margin-left: 2%;
+}
+
+.home-filtersLogo {
+    width: 1%;
+    margin-left: 2%;
+    margin-top: 0%;
+    /* margin-bottom: 2%; */
+}
+
+.detailsBtn {
+    /* float: right; */
+    background-color: green;
+    margin-left: 67%;
+    margin-right: 2%;
+}
