@@ -54,4 +54,4 @@ Both the Processing and the User Interface Layers are then hosted on Snowpark Co
 
 ## Explore the quickstart
 
-Head over to [Snowflake QWuickstarts](https://quickstarts.snowflake.com/guide/build_a_data_app_and_run_it_on_Snowpark_container_services) and run thought the quickstart end-to-end.
+Head over to [Snowflake Quickstarts](https://quickstarts.snowflake.com/guide/build_a_data_app_and_run_it_on_Snowpark_container_services) and run thought the quickstart end-to-end.
