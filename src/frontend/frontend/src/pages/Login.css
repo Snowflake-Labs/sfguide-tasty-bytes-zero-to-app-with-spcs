@@ -1,0 +1,61 @@
+.App {
+    background-color: white;
+  }
+
+.loginLogo {
+    width: 15%;
+    margin-bottom: 2%;
+}
+  
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.loginForm {
+    width: 500px;
+    height: 400px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+  
+  .loginFormContent {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  
+  .loginTitle {
+    text-align: center;
+    margin-bottom: 0em;
+    margin-left: 5%;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+  }
+
+  .loginHeader {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 10%;
+  }
+  
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+
+.message {
+  color: red;
+  font-weight: 700;
+  width: 85%;
+}

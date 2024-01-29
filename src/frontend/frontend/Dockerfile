@@ -1,0 +1,19 @@
+FROM node:latest
+
+ARG FRONTEND_SERVICE_PORT
+ARG REACT_APP_BACKEND_SERVICE_URL
+
+WORKDIR /src/
+COPY package.json /src/package.json
+
+RUN npm install
+
+ENV REACT_APP_BACKEND_SERVICE_URL=${REACT_APP_BACKEND_SERVICE_URL}
+
+ENV PORT=${FRONTEND_SERVICE_PORT}
+EXPOSE ${FRONTEND_SERVICE_PORT}
+
+COPY ./src /src/src
+COPY ./public /src/public
+
+CMD ["npm", "start"]

@@ -1,0 +1,25 @@
+events {
+  worker_connections  1024;
+}
+http {
+  server {
+    listen 8000;
+    listen [::]:8000;
+    server_name localhost;
+
+    location / {
+      proxy_pass  http://$FRONTEND_SERVICE/;
+    }
+
+    location /test {
+        add_header Content-Type text/html;
+
+        return 200 '<html><body><h1>This is the router testpage</h1><li>Sf-Context-Current-User: $http_sf_context_current_user</li><li>Host: $http_host</li><li>Frontend Server: $FRONTEND_SERVICE</li><li>Backend Server: $BACKEND_SERVICE</li></body></html>';
+    }
+
+    location /api {
+        rewrite     /api/(.*) /$1  break;
+        proxy_pass  http://$BACKEND_SERVICE/;
+    }
+  } 
+}

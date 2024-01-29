@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+    router_service:
+        build: 
+          context: ./router
+          args:
+            - ROUTER_PORT=${ROUTER_PORT}
+            - FRONTEND_SERVICE=${FRONTEND_SERVICE}
+            - BACKEND_SERVICE=${BACKEND_SERVICE}
+        ports:
+          - ${ROUTER_PORT}:8000
+        environment:
+          - FRONTEND_SERVICE=${FRONTEND_SERVICE}
+          - BACKEND_SERVICE=${BACKEND_SERVICE}
+
+    frontend_service:
+        build: 
+          context: ./frontend
+          args:
+            - FRONTEND_SERVICE_PORT=${FRONTEND_SERVICE_PORT}
+            - REACT_APP_BACKEND_SERVICE_URL=${REACT_APP_BACKEND_SERVICE_URL}
+        ports:
+            - ${FRONTEND_SERVICE_PORT}:${FRONTEND_SERVICE_PORT}
+        environment:
+            - REACT_APP_BACKEND_SERVICE_URL=${REACT_APP_BACKEND_SERVICE_URL}

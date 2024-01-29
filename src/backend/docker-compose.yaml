@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+    backend_service:
+        build: 
+            context: ./
+            args:
+            - PORT=${PORT}
+        ports:
+            - ${PORT}:${PORT}
+        environment:
+            - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+            - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+            - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+            - SNOWFLAKE_USERNAME=${SNOWFLAKE_USERNAME}
+            - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+            - SNOWFLAKE_ROLE=${SNOWFLAKE_ROLE}
+            - SNOWFLAKE_WAREHOUSE=${SNOWFLAKE_WAREHOUSE}
+            - SNOWFLAKE_DATABASE=${SNOWFLAKE_DATABASE}
+            - SNOWFLAKE_SCHEMA=${SNOWFLAKE_SCHEMA}
+            - CLIENT_VALIDATION=${CLIENT_VALIDATION}
+
